@@ -35,10 +35,22 @@
                                 <rect key="frame" x="65" y="324" width="285" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUe-Ft-wb5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem id="8Wm-1H-A2X">
+                                        <barButtonItem key="leftBarButtonItem" image="square.and.arrow.up" catalog="system" id="eDe-xA-FLl" userLabel="ShareButton"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="17n-Ts-xxZ" userLabel="CancelButton"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="TUe-Ft-wb5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1La-SA-IKO"/>
+                            <constraint firstItem="TUe-Ft-wb5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5as-B1-rMT"/>
+                            <constraint firstItem="TUe-Ft-wb5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7U7-Gc-z9D"/>
                             <constraint firstItem="vNc-MF-nka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kw6-5C-dYR"/>
                             <constraint firstItem="vNc-MF-nka" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pe9-an-6PW"/>
                             <constraint firstItem="vNc-MF-nka" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tGK-oE-CTt"/>
@@ -56,6 +68,7 @@
     </scenes>
     <resources>
         <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
