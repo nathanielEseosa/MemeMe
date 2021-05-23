@@ -19,9 +19,14 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNc-MF-nka">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Pick" id="9tP-ea-FFl">
+                                    <barButtonItem title="CameraButton" image="camera" catalog="system" width="484.5" id="bsH-Zh-Ygu">
                                         <connections>
-                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="eOe-mu-YND"/>
+                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="Q3f-tG-A2c"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Album" width="212" id="9tP-ea-FFl" userLabel="AlbumButton">
+                                        <connections>
+                                            <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="Kkj-nK-kqo"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -40,6 +45,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="bsH-Zh-Ygu" id="aG4-lZ-TaN"/>
                         <outlet property="imagePickerView" destination="ilC-F6-mLS" id="Lbv-84-whB"/>
                     </connections>
                 </viewController>
@@ -49,6 +55,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
